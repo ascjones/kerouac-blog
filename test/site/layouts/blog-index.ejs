@@ -1,0 +1,10 @@
+<% layout('boilerplate') -%>
+
+<%- content -%>
+
+<div>
+	<h2>All Posts</h2>
+	<% posts.forEach(function(post) { %>
+		<h3><%- post.title -%></h3>
+	<% }) %>
+</div>
